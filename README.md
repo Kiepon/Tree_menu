@@ -29,7 +29,7 @@ Tree Menu
 1. Клонируйте репозиторий и откройте его в любом удобном для вас редакторе:
 
 ```
-git clone https://github.com/artyom-vah/tree_menu.git
+git clone https://github.com/Kiepon/Tree_menu.git
 ```
 
 2. Установите виртуальное окружение:
