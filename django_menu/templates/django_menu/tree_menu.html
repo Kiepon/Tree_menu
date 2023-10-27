@@ -1,0 +1,13 @@
+{% load menu_tags %}
+{% load static %}
+
+{% for item in menu_items %}
+    <ul class="navmenu">
+        <li{% if request.path == item.url %} class="active"{% endif %}>
+            <a href="{{ item.url }}">{{ item.name }}</a>
+            {% if  item.children.all %}
+                {% render_menu item %}
+            {% endif %}
+        </li>
+    </ul>
+{% endfor %}
